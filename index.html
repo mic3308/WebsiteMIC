@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Microsoft Innovation Center | Universitas Indonesia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./libs/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./src/css/fonts.css">
+    <link rel="stylesheet" href="./src/css/styles.css">
+</head>
+<body>
+    <div class="wrap">
+        <section class="header">
+            <div class="container-custom">
+                <div class="img-logo">
+                    <img src="src/images/logo.png" alt="">
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h1>Innovation starts here</h1>
+                        <h3 id="countdown"></h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="./libs/jquery/dist/jquery.min.js"></script>
+    <script src="./libs/jquery.countdown-2.2.0/jquery.countdown.min.js"></script>
+    <script>
+        $("#countdown")
+        .countdown("2017/10/25", function(event) {
+            $(this).text(
+                event.strftime('%D days, %H hours, %M minutes, and %S seconds')
+            );
+        });
+    </script>
+</body>
+</html>
