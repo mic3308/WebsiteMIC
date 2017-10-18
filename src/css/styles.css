@@ -1,7 +1,7 @@
 html, body {
     height: 100%;
     margin: 0;
-    font-family: 'SegoeUI';
+    font-family: 'SegoeUI', sans-serif;
     overflow: hidden;
 }
 
@@ -14,11 +14,11 @@ html, body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'SegoeUILight';
+    font-family: 'SegoeUILight', sans-serif;
 }
 
 li, a, p {
-    font-family: 'SegoeUI';
+    font-family: 'SegoeUI', sans-serif;
 }
 
 section {
